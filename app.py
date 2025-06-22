@@ -59,9 +59,9 @@ if st.button("Run Analysis"):
                 st.error(f"❌ Exception occurred: {str(e)}")
 
 st.markdown(
-    "<p style='font-size: 0.9rem; color: white;'>"
-    "For a full breakdown and walkthrough blog of this project check: "
-    "<a href='https://codebynight.dev' target='_blank' style='color: white; text-decoration: underline;'>"
+    "<p style='font-size: 1rem; color: #ccc;'>"
+    "For a full walkthrough of this project, visit: "
+    "<a href='https://codebynight.dev' target='_blank' style='color: #ccc; text-decoration: underline;'>"
     "codebynight.dev</a></p>",
     unsafe_allow_html=True,
 )
