@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="SaaS Market Intelligence Tool", layout="centered")
+st.set_page_config(
+    page_title="SaaS Market Intelligence Tool",
+    layout="centered",
+    initial_sidebar_state="expanded",
+)
 st.title("🧠 SaaS Market Intelligence Tool")
 st.sidebar.header("🛠️ Settings")
 
@@ -9,7 +13,10 @@ api_key = st.sidebar.text_input("Your OpenAI API Key", type="password")
 mode = st.sidebar.radio(
     "Choose analysis mode", ["Offer Clarity Analyzer", "Competitor Page Breakdown"]
 )
-url = st.text_input("Enter a SaaS homepage URL", placeholder="https://example.com")
+url = st.text_input(
+    "Enter a SaaS web page URL below & OpenAi API key in the sidebar",
+    placeholder="https://example.com",
+)
 
 SCRAPE_API_URL = "https://saas-intel-backend.onrender.com/scrape"
 ANALYZE_API_URL = "https://saas-intel-backend.onrender.com/analyze"
