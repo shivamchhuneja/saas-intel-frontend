@@ -67,8 +67,8 @@ if st.button("Run Analysis"):
 
 st.markdown(
     "<p style='font-size: 1rem; color: #ccc;'>"
-    "For a full walkthrough of this project, visit: "
-    "<a href='https://codebynight.dev' target='_blank' style='color: #ccc; text-decoration: underline;'>"
+    "For a full tutorial & walkthrough of this project, visit: "
+    "<a href='https://codebynight.dev/posts/building-saas-market-intelligence-tool/' target='_blank' style='color: #ccc; text-decoration: underline;'>"
     "codebynight.dev</a></p>",
     unsafe_allow_html=True,
 )
